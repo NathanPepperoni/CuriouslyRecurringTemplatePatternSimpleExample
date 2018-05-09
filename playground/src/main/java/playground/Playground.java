@@ -5,11 +5,11 @@ public class Playground
 {
     public static void main(String[] args)
     {      
-        OriginalObject original = new OriginalObject.Builder().setString("test1").build();
-        NewSubClass newSubClass = new NewSubClass.Builder().setString("test2").setBool(true).build();
+        OriginalClass originalClass = new OriginalClass.Builder().setString("test1").build();
+        SubClass subClass = new SubClass.Builder().setString("test2").setBool(true).build();
         
-        System.out.println(original.getString());
-        System.out.println(newSubClass.getString());
-        System.out.println(newSubClass.getDoesThisWork());
+        System.out.println(originalClass.getString());
+        System.out.println(subClass.getString());
+        System.out.println(subClass.getBool());
     }
 }
